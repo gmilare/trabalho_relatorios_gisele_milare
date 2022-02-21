@@ -259,7 +259,7 @@ fd$ano <- lubridate::year(d_micro$ano_mes)
 fd$mes <- lubridate::month(d_micro$ano_mes)
 ```
 
-```{r grafico2, fig.height = 15, fig.width= 3,echo=FALSE, fig.cap="Gráfico polar de número de focos de queimadas por km² mensais por microrregião no período de 2011 a 2021", message=FALSE, warning=FALSE, , fig.align='center', out.width="100%"}
+```{r grafico2, fig.height = 25, fig.width= 10,echo=FALSE, fig.cap="Gráfico polar de número de focos de queimadas por km² mensais por microrregião no período de 2011 a 2021", message=FALSE, warning=FALSE, , fig.align='center', out.width="100%"}
 
 #gráfico polar
 fd$Ano <- as.character(fd$ano)

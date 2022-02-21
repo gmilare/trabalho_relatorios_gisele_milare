@@ -4,6 +4,6 @@ output: github_document
 
 Trabalho final do curso **Relatórios Reprodutíveis com R**
 
-Título do trabalho: **Analíse temporal de focos de queimadas nas microrregiões do Matopiba, Brasil**
+Título do trabalho: **Focos de queimadas nas microrregiões do Matopiba, Brasil**
 
 Para acessar, (clique aqui)[]

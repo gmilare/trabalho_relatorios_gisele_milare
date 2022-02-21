@@ -1,6 +1,6 @@
 #leitura da lista das micrroregiões do Matopiba
 list_micro <-
-  readr::read_csv("dados/micro.CSV", locale = readr::locale(encoding = "latin1"))
+  readr::read_csv(here::here("dados","csv","micro.CSV"), locale = readr::locale(encoding = "latin1"))
 
 #criação de lista com os códigos das microrregiões
 codmicro <- list_micro$CD_MICRO
