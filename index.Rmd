@@ -67,7 +67,7 @@ knitr::include_graphics("img/MATOPIBA.jpg")
 
 De modo a manter a delimitação atualizada da área da região do Matopiba, foi utilizada a base atualizada (ano 2020) de feições das microrregiões do @ibgedados. 
 
-# Ocorrência e sazonalidade de focos de queimada nas microrregiões do Matopiba
+# Ocorrência de focos de queimada nas microrregiões do Matopiba
 
 Foram utilizados dados de focos de queimadas que são indicativos para fogo ativo. Os dados foram obtidos na plataforma do [Programa Queimadas/INPE](https://queimadas.dgi.inpe.br/) para o período de 2011 a 2021. Foram considerados somente os focos obtidos do satelite de referência, indicado para análises temporais.
 
@@ -238,7 +238,7 @@ d_micro <- d_micro |>
 
 Na Figura \@ref(fig:grafico1) é apresentado os gráficos para cada microrregião com a ocorrência número de focos de queimadas por km², com dados mensais do período analisado (2011 a 2021). É possivel observar que há uma sazonalidade dessa ocorrência, que é apresentada na Figura \@ref(fig:grafico2) através de gráficos polares para cada microrregião. Os meses de maior ocorrência são agosto, setembro e outubro.
 
-```{r grafico1, fig.height = 15, echo=FALSE, fig.cap="Gráfico de número de focos de queimadas mensais por km², no período de 2011 a 2021, por microrregião", message=FALSE, warning=FALSE, fig.align='center', out.width="100%"}
+```{r grafico1, fig.height = 15, echo=FALSE, fig.cap="Gráfico de número de focos de queimadas mensais por km², no período de 2011 a 2021, por microrregião.", message=FALSE, warning=FALSE, fig.align='center', out.width="100%"}
 
 #gráfico
 ggplot(data = d_micro) +
@@ -259,7 +259,7 @@ fd$ano <- lubridate::year(d_micro$ano_mes)
 fd$mes <- lubridate::month(d_micro$ano_mes)
 ```
 
-```{r grafico2, fig.height = 25, fig.width= 10,echo=FALSE, fig.cap="Gráfico polar de número de focos de queimadas por km² mensais por microrregião no período de 2011 a 2021", message=FALSE, warning=FALSE, , fig.align='center', out.width="100%"}
+```{r grafico2, fig.height = 25, fig.width= 10,echo=FALSE, fig.cap="Gráfico polar de número de focos de queimadas por km² mensais por microrregião no período de 2011 a 2021.", message=FALSE, warning=FALSE, , fig.align='center', out.width="100%"}
 
 #gráfico polar
 fd$Ano <- as.character(fd$ano)
@@ -282,7 +282,7 @@ ggplot(fd, aes(x = mes, y = Dmes, color = Ano)) +
   ) +
   scale_y_continuous(limits =  c(0, 0.096)) +
   scale_x_continuous(breaks = c(2:12)) +
-  theme(text = element_text(size = 8),
+  theme(text = element_text(size = 9),
         legend.position = "top") +
   xlab("Mês") + ylab("Focos/km²") +
   coord_polar() + facet_wrap( ~ nm_micro,
