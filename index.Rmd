@@ -189,7 +189,7 @@ format2 <-
 
 Na Figura \@ref(fig:mapas) é apresentado os mapas de ocorrência de focos de queimadas por microrregião expressa pelo número de focos por km². As micrroregiões com mais focos de queimadas por km² foram as microrregiões `r d[1]$nm_micro[1]` com `r format2(d[3]$D[1])` focos/km² em `r d[2]$ano[1]`,  `r d[1]$nm_micro[2]` com `r format2(d[3]$D[2])` focos/km² em `r d[2]$ano[2]` e `r d[1]$nm_micro[3]` com `r format2(d[3]$D[3])` focos/km² em `r d[2]$ano[3]`.
 
-```{r mapas, echo=FALSE, fig.cap="Mapa anual de ocorrência de focos queimadas por km² nas microrregiões do Matopiba.", fig.height=12, message=FALSE, warning=FALSE, out.width="100%"}
+```{r mapas, echo=FALSE, fig.align='center', fig.cap="Mapa anual de ocorrência de focos queimadas por km² nas microrregiões do Matopiba.", fig.height=12, message=FALSE, warning=FALSE, out.width="100%"}
 
 #plotagem dos mapas
 library(ggplot2)
